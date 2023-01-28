@@ -1,0 +1,124 @@
+*{
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+
+    font-family: 'Acme', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 100%;
+    overflow-y: hidden;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+    border-radius: 30px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    padding: 20px 20px 10px 10%;
+}
+
+.text-area {
+    background: #ffffff;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 2%;
+    color: #000000;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 2px;
+}
+::placeholder {color: rgba(0, 0, 0, 0.3); }
+  .text-area:focus {
+      outline: none;
+    }
+
+ .mensaje{
+        height: 400px;
+        background: rgb(255, 255, 255);
+        background-position: center;
+        border: 2px solid #000;
+        border-radius: 10px;
+        color: #000000;
+        margin-left: 150px;
+        margin-top: 10px;
+        padding-left: 20px;
+        position: fixed;
+    }
+   
+    .mensaje:focus {
+        outline: none;
+    }
+    
+    .botones{
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    .btn-desencriptar {
+        margin: 0 auto;
+        color: rgba(101, 97, 97, 0.9) !important;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        background: #D8DFE8;
+        border: 2px solid #000;
+        border-radius: 24px;
+        border-color: #000000;
+        position: relative;
+    }
+    .btn-desencriptar:hover{
+        color: rgb(122, 56, 56) !important;
+        box-shadow: 0 4px 15px rgb(0, 0, 0);
+        transition: all 0.2s ease;
+    }
+    
+    .btn-encriptar {
+        margin: 0 auto;
+        color: rgba(101, 97, 97, 0.9) !important;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        background: #D8DFE8;
+        border: 2px solid #000;
+        border-radius: 24px;
+        border-color: #000000;
+        position: relative;
+    }
+    .btn-encriptar:hover{
+        color: rgb(122, 56, 56) !important;
+        box-shadow: 0 4px 15px rgb(0, 0, 0);
+        transition: all 0.2s ease;
+    }
+
+    .copiar {
+        background: #D8DFE8;
+        border: 1px solid #000000;
+        border-radius: 24px;
+        color: #272a28;
+        cursor: pointer;
+        height: 50px;
+        margin-left: 180px;
+        margin-top: 450px;
+        position: absolute;
+        width: 200px;
+    }
+    .copiar:hover{
+        color: rgb(122, 56, 56) !important;
+        box-shadow: 0 4px 15px rgb(0, 0, 0);
+        transition: all 0.2s ease;
+    }
+    
+    .informacion {
+        color: #ffffff;
+        font-size:15px;
+        border-radius: 10%;
+        transition: 40ms;
+        box-shadow: 0px 0px 4px 2px rgb(122, 56, 56);
+    }
