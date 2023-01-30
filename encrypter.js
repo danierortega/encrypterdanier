@@ -3,6 +3,8 @@ const mensaje = document.querySelector(".mensaje");
 const copia = document.querySelector(".copiar");
 copia.style.display = "none"
 
+const semilla = 13;
+
 function btnEncriptar(){
         const textoEncriptado = cifrar(textArea.value)
         mensaje.value = textoEncriptado
@@ -16,7 +18,7 @@ function cifrar(c){
     let cifrado = ''
     for (var i=0; i<c.length; i++){
         console.log(c.charAt(i).charCodeAt());
-        cifrado += c.charCodeAt(i).toString() + '&';
+        cifrado += (c.charCodeAt(i)+semilla).toString() + '&';
     }
 
     console.log(cifrado)
@@ -37,7 +39,7 @@ function descifrar(d){
     
     for(let i=0; i<descifrado.length; i++){
         let descifrado2 = 0;
-        descifrado2 = Math.floor(descifrado[i]);
+        descifrado2 = (Math.floor(descifrado[i])-semilla);
         descifradoFinal += String.fromCharCode(descifrado2);
     }
 
